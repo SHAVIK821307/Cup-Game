@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cup game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg">
+      <h1 class="heading">guess the ball</h1>
+      <h2 class="heading">Start the game</h2>
+      <div class="ballwrap">
+        <div
+          class="balls"
+          id="lball"
+          onmouseout="myFunction2()"
+          onclick="myFunction()"
+        >
+        <div id="ball1">
+
+          <img src="ball.png"  alt="ball1" />
+        </div>
+        </div>
+        <div class="balls" onmouseout="myFunction2()" onclick="myFunction()">
+          <div id="ball2">
+
+            <img src="ball.png" alt="ball2" />
+          </div>
+        </div>
+        <div
+          class="balls"
+          id="rball"
+          onmouseout="myFunction2()"
+          onclick="myFunction()"
+        >
+        <div id="ball3">
+
+          <img src="ball.png"  alt="ball3" />
+        </div>
+        </div>
+      </div>
+      <button class="button-6" onclick="randgenerate()" role="button">
+        Shuffle Ball
+      </button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
